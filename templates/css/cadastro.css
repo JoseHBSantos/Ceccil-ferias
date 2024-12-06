@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+}
+
+.container {
+    width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-control {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button{
+    font-size: 0.8125rem;
+    line-height: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 100%;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    background: #c83d3d ;
+    color: #FFF ;
+    border: 1px solid currentColor;
+    border-radius: 4px;
+    margin-top: 0.5rem;
+    transition: 0.25s;
+}
+
+.btn-voltar{
+    font-size: 0.8125rem;
+    line-height: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 100%;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    background:  transparent;
+    color: #c83d3d;
+    border: 1px solid currentColor;
+    border-radius: 4px;
+    margin-top: 0.5rem;
+    transition: 0.25s;
+}
+
+button:hover,
+button:focus{
+    outline: none;
+    transform: scale(0.98);
+}
+
+
+
+.btn-voltar{
+    width: 150px;
+    height: 50px;
+    padding: 0;   
+}
+
+.btn-voltar:hover {
+    outline: none;
+    background: #c83d3d;
+    color: #FFF;
+}
+div .btn-voltar{
+    margin-top: 20px;
+}
+
+@media screen and (max-width:768px) {
+    .container form {
+        max-width: 90% !important;
+    }
+} 

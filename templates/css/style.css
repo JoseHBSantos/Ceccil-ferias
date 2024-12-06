@@ -1,0 +1,302 @@
+a {
+    text-decoration: none;
+    color: hsl(0 0 0)
+}
+
+
+.bg-banner {
+    background: url(image/imagem\ 8.png) no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.bg-banner .container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.bg-banner::before {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+}
+
+/* Botão pesquisa */
+.search-box {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    height: 60px;
+    padding: 10px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40rem;
+}
+
+.search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    padding: 10px;
+    color: black;
+    font-size: 16px;
+    line-height: 50px;
+    width: 40rem;
+}
+
+.search-btn {
+    background: transparent;
+    border: none;
+    width: 30px;
+    height: 30px;
+}
+
+
+
+
+.btn-primary {
+    color: #fff;
+    background-color: #f1b706;
+    border-color: #f1b706;
+}
+
+.btn-outline-primary {
+    color: #fff;
+    border-color: #f1b706;
+}
+
+.btn-primary:hover,
+.btn-outline-primary:hover {
+    background-color: #f1b706;
+    border-color: #f1b706;
+    transition: all 0.5s;
+}
+
+/* Formatando Icons*/
+
+.icons {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: rgba(239, 181, 6, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Formatando parallax - Image Pixed */
+
+.parallax {
+    background: url(./image/banner_primeira.png) no-repeat center;
+    /*background-attachment: fixed;
+    background-repeat: no-repeat;*/
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    width: 100% !important;
+    height: 85vh;
+    background-size: contain;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.fem {
+    background: url(./image/banner_feminino.png) no-repeat center;
+    margin-top: -1rem;
+    width: 100% !important;
+    height: 120vh;
+    background-size: contain;
+}
+
+.masc {
+    background: url(./image/banner_masculino.png) no-repeat center;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    width: 100% !important;
+    height: 120vh;
+    background-size: contain;
+}
+
+.alta {
+    background: url(./image/em_alta.png) no-repeat center;
+    margin-top: -1rem;
+    width: 100% !important;
+    height: 120vh;
+    background-size: contain;
+}
+
+.card {
+    width: 250px;
+    height: 300px;
+}
+
+.card .img-fluid {
+    width: 90%;
+    height: 100%;
+
+}
+
+
+.row.teste-b {
+    width: calc(100% - 1rem);
+}
+
+.teste {
+    max-height: 5rem;
+}
+
+.button .btn {
+    margin-top: 50px;
+    margin-left: 80%;
+}
+
+.newsletter {
+    background-color: #927E6D;
+}
+
+.newsletter .box-newsletter {
+    text-align: center;
+    background-color: #927E6D;
+    background-size: cover;
+    padding: 50px;
+    margin-top: 50px;
+}
+
+.newsletter .box-newsletter h2 {
+    font-size: 2.5rem;
+}
+
+.newsletter .box-newsletter p {
+    margin: 13px 0;
+    font-size: 1.2rem;
+}
+
+.newsletter .box-newsletter input {
+    width: 35%;
+    padding: 15px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    color: #00000098;
+}
+
+.newsletter .box-newsletter button {
+    font-size: 15px;
+    border: none;
+    outline: none;
+    padding: 15px;
+    border-radius: 14px;
+    color: white;
+    background-color: rgb(255, 39, 39);
+    cursor: pointer;
+}
+
+footer {
+    background-color: white;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    color: #000;
+}
+
+.container ul {
+    width: 25%;
+}
+
+/* Media Queries*/
+@media screen and (max-width:768px) {
+
+    .offcanvas {
+        width: 100% !important;
+    }
+
+    .parallax {
+        background: url(./image/compra_mobile.png) no-repeat center;
+        width: 100%;
+        height: 50vh;
+        margin-top: 0;
+        padding-top: 0;
+        display: flex;
+        flex-wrap: wrap;
+        background-position: center;
+        background-size: contain;
+    }
+
+    .fem {
+        background: url(./image/banner_feminino.png) no-repeat center;
+        width: auto;
+        height: 50vh;
+        margin-top: 0;
+        margin-bottom: 10px;
+        padding-top: 0;
+        display: flex;
+        flex-wrap: wrap;
+        width: 50vw;
+        background-position: center;
+        background-size: contain;
+    }
+    .masc {
+        background: url(./image/banner_masculino.png) no-repeat center;
+        width: auto;
+        height: 50vh;
+        margin-top: 0;
+        margin-bottom: 10px;
+        padding-top: 0;
+        display: flex;
+        flex-wrap: wrap;
+        width: 50vw;
+        background-position: center;
+        background-size: contain;
+    }
+    .alta {
+        background: url(./image/em_alta.png) no-repeat center;
+        width: auto;
+        height: 50vh;
+        margin-top: 0;
+        margin-bottom: 0px;
+        padding-top: 0;
+        display: flex;
+        flex-wrap: wrap;
+        width: 50vw;
+        background-position: center;
+        background-size: contain;
+    }
+
+    .card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+
+    .search-box {
+        width: 90% !important;
+    }
+
+    .container ul .col {
+        width: 80% !important;
+    }
+}
